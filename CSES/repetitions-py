@@ -1,0 +1,14 @@
+import sys
+arr=sys.stdin.readline().strip()
+current_run=0
+max_run=0
+prev=""
+for char in arr:
+    if prev==char:
+        current_run+=1
+    else:
+        current_run=1
+        prev=char
+    max_run=max(curren_run,max_run)
+print(max_run)
+
