@@ -1,0 +1,13 @@
+import sys
+n=sys.stdin.readline().strip()
+arr=list(map(int,sys.stdin.readline().split()))
+nos=[arr[0]]
+moves=0
+for char in arr[1:]:
+  if char>nos[-1]:
+    nos.append(char)
+  else:
+    moves+=nos[-1]-char
+    nos.append(nos[-1])
+print(moves)
+  
