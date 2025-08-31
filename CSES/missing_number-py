@@ -1,0 +1,8 @@
+import sys
+n=int(sys.stdin.readline().strip())
+arr=list(map(int,sys.stdin.readline().split()))
+total=(n*(n+1))//2
+nums=0
+for char in arr:
+  nums+=char
+print(total-nums)
