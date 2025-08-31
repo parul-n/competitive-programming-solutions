@@ -1,0 +1,14 @@
+import sys
+n=sys.stdin.readline().strip()
+if n==2 or n==3:
+  print("NO SOLUTION")
+  sys.exit()
+even=[]
+odd=[]
+for char in range(1,n+1):
+  if char%2==0:
+    even.append(char)
+  else:
+    odd.append(char)
+final=even+odd
+print(" ".join(map(str,final)))
